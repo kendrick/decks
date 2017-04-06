@@ -21,16 +21,16 @@ html(lang='en')
       block slides
 
     script(src='https://code.jquery.com/jquery-2.2.4.min.js')
-    script(src='/js/vendor/reveal.min.js')
-    //- script(src='/js/vendor/head.min.js')
+    script(src='/js/vendor/reveal/js/reveal.min.js')
+    script(src='/lib/head.min.js')
 
     block revealInit
       script.
         Reveal.initialize({
           progress: false,
           controls: false,
-          //dependencies: [
-          //  { src: 'plugin/zoom-js/zoom.js', async: true },
-          //  { src: 'plugin/notes/notes.js', async: true }
-          //]
+          dependencies: [
+            { src: '/plugin/zoom-js/zoom.js', async: true },
+            { src: '/plugin/notes/notes.js', async: true }
+          ]
         });

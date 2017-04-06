@@ -30,6 +30,7 @@ function getTask(task) {
 
 gulp.task('default', getTask('default'));
 gulp.task('build', getTask('build'));
+gulp.task('copy', getTask('copy'));
 gulp.task('server', getTask('server'));
 gulp.task('sitemap', getTask('sitemap'));
 gulp.task('styles', getTask('styles'));
