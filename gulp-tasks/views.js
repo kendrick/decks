@@ -8,16 +8,18 @@
       var data = require('gulp-data');
       var pug = require('pug');
 
-      return gulp.src([config.srcPath + '/**/*.pug', '!' + config.srcPath + '/**/_*.pug'])
+      var decksPath = config.srcPath + '/decks';
+
+      return gulp.src([decksPath + '/**/*.pug', '!' + decksPath + '/**/_*.pug'])
         // .pipe(plugins.changed(config.buildPath, { extension: '.html' }))
         .pipe(plugins.plumber({ errorHandler: plugins.notify.onError('Error: <%= error.message %>') }))
         .pipe(data(function (file) {
           var fileDir = path.dirname(file.path);
-          var relPath = path.relative(config.srcPath, fileDir);
+          var relPath = path.relative(decksPath, fileDir);
           var slides;
 
           if (relPath) {
-            slides = fs.readdirSync(config.srcPath + '/' + relPath);
+            slides = fs.readdirSync(decksPath + '/' + relPath);
           }
 
           return {
@@ -43,7 +45,7 @@
           };
         }))
         .pipe(plugins.pug({
-          basedir: config.srcPath,
+          basedir: decksPath,
           pretty: true,
           locals: {
             buildPath: ''

@@ -13,16 +13,16 @@ html(lang='en')
     block title
       title #{title}
     block styles
-      link(rel='stylesheet', href='/styles/vendor/reveal/reveal.min.css')
-      link(rel='stylesheet', href=(theme || '/styles/theme-default.min.css'))
+      link(rel='stylesheet', href='../styles/vendor/reveal/reveal.min.css')
+      link(rel='stylesheet', href=(theme || '../styles/theme-default.min.css'))
 
   body
     .reveal
       block slides
 
     script(src='https://code.jquery.com/jquery-2.2.4.min.js')
-    script(src='/js/vendor/reveal/js/reveal.min.js')
-    script(src='/lib/head.min.js')
+    script(src='../js/vendor/reveal/js/reveal.min.js')
+    script(src='../lib/head.min.js')
 
     block revealInit
       script.
@@ -30,7 +30,7 @@ html(lang='en')
           progress: false,
           controls: false,
           dependencies: [
-            { src: '/plugin/zoom-js/zoom.js', async: true },
-            { src: '/plugin/notes/notes.js', async: true }
+            { src: '../plugin/zoom-js/zoom.js', async: true },
+            { src: '../plugin/notes/notes.js', async: true }
           ]
         });
