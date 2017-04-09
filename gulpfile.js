@@ -3,8 +3,8 @@
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')({ DEBUG: false, pattern: '*' });
 
-var srcPath = './src';
-var buildPath = './dist';
+var srcPath = 'src';
+var buildPath = 'dist';
 var buildCssPath = buildPath + '/css';
 var tasksPath = './gulp-tasks';
 
