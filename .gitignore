@@ -1,3 +1,15 @@
+#-- TEMP CHANGES TO GITIGNORE FOR DEPLOYMENT --
+README.md
+.editorconfig
+.pug-lintrc
+.sass-lint.yml
+deploy*
+gulp-tasks
+gulpfile.js
+package.json
+publish.sh
+src
+
 dist/
 node_modules/
 *.bak
