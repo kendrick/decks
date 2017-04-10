@@ -17,7 +17,7 @@ SHA=`git rev-parse --verify HEAD`
 git checkout -b TEMP_BRANCH
 npm install --loglevel error
 
-echo -e "#-- TEMP CHANGES TO GITIGNORE FOR DEPLOYMENT --\nREADME.md\n.editorconfig\n.pug-lintrc\n.sass-lint.yml\ndeploy*\ngulp-tasks\ngulpfile.js\npackage.json\nsrc\n\n$(cat .gitignore)" > .gitignore
+echo -e "#-- TEMP CHANGES TO GITIGNORE FOR DEPLOYMENT --\nREADME.md\n.editorconfig\n.pug-lintrc\n.sass-lint.yml\ndeploy*\ngulp-tasks\ngulpfile.js\npackage.json\npublish.sh\nsrc\n\n$(cat .gitignore)" > .gitignore
 gulp build
 
 mv dist/* .
