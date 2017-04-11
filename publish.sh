@@ -4,13 +4,14 @@ set -e # Exit with nonzero exit code if anything fails
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
+BUILD_DIR="builds/decks-publish"
 REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 
 cd $HOME
-rm -rf decks-publish/**/* || exit 0
-git clone $REPO decks-publish
-cd decks-publish
+rm -rf $BUILD_DIR/**/* || exit 0
+git clone $REPO $BUILD_DIR
+cd $BUILD_DIR
 
 SHA=`git rev-parse --verify HEAD`
 
