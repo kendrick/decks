@@ -8,6 +8,21 @@
         .pipe(plugins.plumber({ errorHandler: plugins.notify.onError('Error: <%= error.message %>') }))
         .pipe(plugins.sourcemaps.init())
         .pipe(plugins.sass())
+        .pipe(plugins.postcss(
+          [
+            plugins.postcssFontMagician({
+              'formats': 'local woff2 woff',
+              'variants': {
+                'Work Sans': {
+                  '300': [],
+                  '400': [],
+                  '600': [],
+                  '900': []
+                }
+              }
+            })
+          ]
+        ))
         .pipe(plugins.autoprefixer({
           browsers: config.supportedBrowsers
         }))
@@ -23,17 +38,6 @@
         .pipe(plugins.rename({ suffix: '.min' }))
         .pipe(plugins.postcss(
           [
-            plugins.postcssFontMagician({
-              formats: 'local woff2 woff',
-              variants: {
-                'Work Sans': {
-                  '300': [],
-                  '400': [],
-                  '600': [],
-                  '900': []
-                }
-              }
-            }),
             plugins.cssnano({ autoprefixer: { browsers: config.supportedBrowsers } })
           ]
         ))
