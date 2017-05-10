@@ -4,11 +4,11 @@ README.md
 .pug-lintrc
 .sass-lint.yml
 deploy*
-gulp-tasks
+gulp-tasks/
 gulpfile.js
 package.json
 publish.sh
-src
+src/
 
 dist/
 node_modules/
