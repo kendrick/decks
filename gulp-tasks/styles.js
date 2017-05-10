@@ -12,12 +12,19 @@
           [
             plugins.postcssFontMagician({
               'formats': 'local woff2 woff',
+              'hosted': ['./src/lib/fonts/fira-code'],
               'variants': {
                 'Work Sans': {
                   '300': [],
                   '400': [],
                   '600': [],
                   '900': []
+                },
+                'Fira Code': {
+                  '300': [],
+                  '400': [],
+                  '500': [],
+                  '700': []
                 }
               }
             })
