@@ -21,7 +21,22 @@
       var min = source.pipe(plugins.clone())
         .pipe(plugins.sourcemaps.init())
         .pipe(plugins.rename({ suffix: '.min' }))
-        .pipe(plugins.postcss([plugins.cssnano({ autoprefixer: { browsers: config.supportedBrowsers } })]))
+        .pipe(plugins.postcss(
+          [
+            plugins.postcssFontMagician({
+              formats: 'local woff2 woff',
+              variants: {
+                'Work Sans': {
+                  '300': [],
+                  '400': [],
+                  '600': [],
+                  '900': []
+                }
+              }
+            }),
+            plugins.cssnano({ autoprefixer: { browsers: config.supportedBrowsers } })
+          ]
+        ))
         .pipe(plugins.sourcemaps.write('.', { sourceRoot: null }))
         .pipe(gulp.dest(config.buildPath))
         .pipe(plugins.browserSync.stream({ match: '**/*.css' }))
