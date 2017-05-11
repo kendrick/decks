@@ -9,7 +9,7 @@ REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 
 cd $HOME
-rm -rf $BUILD_DIR/**/* || exit 0
+rm -rf $BUILD_DIR || exit 0
 git clone $REPO $BUILD_DIR
 cd $BUILD_DIR
 
