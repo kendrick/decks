@@ -1,0 +1,7 @@
+extends ../_layout.pug
+
+block vars
+  - var themeOverrides = '../styles/shared/styles.min.css'
+
+block slides
+  .slides!= renderedSlides

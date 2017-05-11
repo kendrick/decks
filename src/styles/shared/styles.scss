@@ -1,0 +1,56 @@
+body {
+  background: linear-gradient(-300deg, #0a689d, #c93ad8);
+  color: #fff;
+}
+
+.reveal {
+  color: #fff;
+  font-family: 'Work Sans';
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+    font-family: inherit;
+  }
+
+  pre,
+  code {
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 4px;
+    background: rgba(white, 0.2);
+    box-shadow: none;
+    word-wrap: break-word;
+    font-size: 2rem;
+    font-family: 'Fira Code';
+    line-height: 1.5;
+  }
+
+  section {
+    img {
+      border: 0;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+
+      .solo {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .smaller {
+    font-size: 0.66em;
+  }
+
+  .emphasize {
+    font-weight: 600;
+  }
+}
