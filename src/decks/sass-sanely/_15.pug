@@ -1,0 +1,9 @@
+section
+  .emphasis Mixins (Bonus!)
+
+  pre
+    | @each $state in $states {
+    |   .\#{$state} {
+    |     @include state-color($state);
+    |   }
+    | }

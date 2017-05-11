@@ -1,3 +1,63 @@
+@font-face{
+  font-family: monospace;
+  font-style: italic;
+  font-weight: 400;
+  src: local("Menlo Italic"),local(Menlo-Italic),local("Consolas Italic"),local(Consolas-Italic),local("Courier New Italic"); }
+@font-face{
+  font-family: monospace;
+  font-style: italic;
+  font-weight: 700;
+  src: local("Menlo Bold Italic"),local(Menlo-BoldItalic),local(Monaco),local("Consolas Bold Italic"),local(Consolas-BoldItalic),local("Courier New Bold Italic"); }
+@font-face{
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Menlo Regular"),local(Menlo-Regular),local(Monaco),local(Consolas),local("Courier New"); }
+@font-face{
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Menlo Bold"),local(Menlo-Bold),local(Monaco),local("Consolas Bold"),local(Consolas-Bold),local("Courier New Bold"); }
+@font-face{
+  font-family: Ubuntu;
+  font-style: italic;
+  font-weight: 300;
+  src: local("Ubuntu Light Italic"),local(Ubuntu-LightItalic),url(//fonts.gstatic.com/s/ubuntu/v9/DZ_YjBPqZ88vcZCcIXm6Vo4P5ICox8Kq3LLUNMylGO4.woff2) format("woff2"),url(//fonts.gstatic.com/s/ubuntu/v9/DZ_YjBPqZ88vcZCcIXm6VobN6UDyHWBl620a-IRfuBk.woff) format("woff"); }
+@font-face{
+  font-family: Ubuntu;
+  font-style: italic;
+  font-weight: 400;
+  src: local("Ubuntu Italic"),local(Ubuntu-Italic),url(//fonts.gstatic.com/s/ubuntu/v9/WB6rgjTg_oRfj6mlXZJbb_esZW2xOQ-xsNqO47m55DA.woff2) format("woff2"),url(//fonts.gstatic.com/s/ubuntu/v9/kbP_6ONYVgE-bLa9ZRbvvvesZW2xOQ-xsNqO47m55DA.woff) format("woff"); }
+@font-face{
+  font-family: Ubuntu;
+  font-style: italic;
+  font-weight: 500;
+  src: local("Ubuntu Medium Italic"),local(Ubuntu-MediumItalic),url(//fonts.gstatic.com/s/ubuntu/v9/ohKfORL_YnhBMzkCPoIqwo4P5ICox8Kq3LLUNMylGO4.woff2) format("woff2"),url(//fonts.gstatic.com/s/ubuntu/v9/ohKfORL_YnhBMzkCPoIqwobN6UDyHWBl620a-IRfuBk.woff) format("woff"); }
+@font-face{
+  font-family: Ubuntu;
+  font-style: italic;
+  font-weight: 700;
+  src: local("Ubuntu Bold Italic"),local(Ubuntu-BoldItalic),url(//fonts.gstatic.com/s/ubuntu/v9/OMD20Sg9RTs7sUORCEN-7Y4P5ICox8Kq3LLUNMylGO4.woff2) format("woff2"),url(//fonts.gstatic.com/s/ubuntu/v9/OMD20Sg9RTs7sUORCEN-7YbN6UDyHWBl620a-IRfuBk.woff) format("woff"); }
+@font-face{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Ubuntu Light"),local(Ubuntu-Light),url(//fonts.gstatic.com/s/ubuntu/v9/_aijTyevf54tkVDLy-dlnFtXRa8TVwTICgirnJhmVJw.woff2) format("woff2"),url(//fonts.gstatic.com/s/ubuntu/v9/_aijTyevf54tkVDLy-dlnD8E0i7KZn-EPnyo3HZu7kw.woff) format("woff"); }
+@font-face{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 400;
+  src: local(Ubuntu),url(//fonts.gstatic.com/s/ubuntu/v9/sDGTilo5QRsfWu6Yc11AXg.woff2) format("woff2"),url(//fonts.gstatic.com/s/ubuntu/v9/_xyN3apAT_yRRDeqB3sPRg.woff) format("woff"); }
+@font-face{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  src: local("Ubuntu Medium"),local(Ubuntu-Medium),url(//fonts.gstatic.com/s/ubuntu/v9/OsJ2DjdpjqFRVUSto6IffFtXRa8TVwTICgirnJhmVJw.woff2) format("woff2"),url(//fonts.gstatic.com/s/ubuntu/v9/OsJ2DjdpjqFRVUSto6IffD8E0i7KZn-EPnyo3HZu7kw.woff) format("woff"); }
+@font-face{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Ubuntu Bold"),local(Ubuntu-Bold),url(//fonts.gstatic.com/s/ubuntu/v9/0ihfXUL2emPh0ROJezvraFtXRa8TVwTICgirnJhmVJw.woff2) format("woff2"),url(//fonts.gstatic.com/s/ubuntu/v9/0ihfXUL2emPh0ROJezvraD8E0i7KZn-EPnyo3HZu7kw.woff) format("woff"); }
 /**
  * Blood theme for reveal.js
  * Author: Walther http://github.com/Walther
