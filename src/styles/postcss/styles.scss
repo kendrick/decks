@@ -1,0 +1,72 @@
+body {
+  background: linear-gradient(-300deg, #ff369b, #c93ad8 30%, #0a689d);
+  color: #fff;
+}
+
+.split-lr {
+  display: flex;
+
+  .l,
+  .r {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+}
+
+.reveal {
+  color: #fff;
+  font-family: 'Work Sans';
+
+  .slides {
+    width: 95% !important;
+    height: 90% !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+    font-family: inherit;
+  }
+
+  pre,
+  code {
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 4px;
+    background: rgba(white, 0.2);
+    box-shadow: none;
+    word-wrap: break-word;
+    font-size: 1.33rem;
+    font-family: 'Fira Code';
+    line-height: 1.5;
+  }
+
+  section {
+    img {
+      border: 0;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+
+      .solo {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .smaller {
+    font-size: 0.66em;
+  }
+
+  .emphasize {
+    font-weight: 600;
+  }
+}
