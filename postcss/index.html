@@ -29,6 +29,28 @@
   <p class="fragment">Adds vendor prefixes based on caniuse.com compatibility info.</p>
 </section>
 <section class="slide">
+  <p>Can't Sass do this?</p>
+  <pre>@mixin animation-name($name...) {
+  -o-animation-name: $name;
+  -moz-animation-name: $name;
+  -webkit-animation-name: $name;
+  animation-name: $name;
+}</pre>
+</section>
+<section class="slide">
+  <p>Can't Sass do this?</p>
+  <pre>@mixin keyframes($name) {
+  @-o-keyframes $name { @content };
+  @-moz-keyframes $name { @content };
+  @-webkit-keyframes $name { @content };
+  @-keyframes $name { @content };
+}</pre>
+</section>
+<section class="slide">
+  <h2>Can't Sass do this?</h2>
+  <h3>"Yes, but…"</h3>
+</section>
+<section class="slide">
   <div class="split-lr">
     <div class="l">Input
       <pre>.container {

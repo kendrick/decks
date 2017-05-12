@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://kendrick.github.io/decks/</loc>
-        <lastmod>2017-05-12T04:40:10.000Z</lastmod>
+        <lastmod>2017-05-12T17:41:45.000Z</lastmod>
     </url>
     <url>
         <loc>http://kendrick.github.io/decks/hello-world/</loc>
-        <lastmod>2017-05-12T04:40:11.000Z</lastmod>
-    </url>
-    <url>
-        <loc>http://kendrick.github.io/decks/postcss/</loc>
-        <lastmod>2017-05-12T04:40:11.000Z</lastmod>
+        <lastmod>2017-05-12T17:41:46.000Z</lastmod>
     </url>
     <url>
         <loc>http://kendrick.github.io/decks/sass-sanely/</loc>
-        <lastmod>2017-05-12T04:40:11.000Z</lastmod>
+        <lastmod>2017-05-12T17:41:46.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://kendrick.github.io/decks/postcss/</loc>
+        <lastmod>2017-05-12T17:41:46.000Z</lastmod>
     </url>
     <url>
         <loc>http://kendrick.github.io/decks/ux-in-10-minutes/</loc>
-        <lastmod>2017-05-12T04:40:11.000Z</lastmod>
+        <lastmod>2017-05-12T17:41:46.000Z</lastmod>
     </url>
     <url>
         <loc>http://kendrick.github.io/decks/plugin/notes/notes.html</loc>
-        <lastmod>2017-05-12T04:40:11.000Z</lastmod>
+        <lastmod>2017-05-12T17:41:45.000Z</lastmod>
     </url>
 </urlset>
