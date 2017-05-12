@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title></title>
+    <link rel="stylesheet" href="../styles/vendor/reveal/reveal.min.css">
+    <link rel="stylesheet" href="../styles/theme-default.min.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+<section class="slide">
+  <h2>Hello World</h2>
+</section>
+<section class="slide">
+  <h2>Hello Again, World</h2>
+  <aside class="notes">This slide has some notes.</aside>
+</section></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="../js/vendor/reveal/js/reveal.min.js"></script>
+    <script src="../lib/head.min.js"></script>
+    <script>
+      Reveal.initialize({
+        progress: false,
+        controls: false,
+        dependencies: [
+          { src: '../plugin/zoom-js/zoom.js', async: true },
+          { src: '../plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>

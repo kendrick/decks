@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title></title>
+    <link rel="stylesheet" href="../styles/vendor/reveal/reveal.min.css">
+    <link rel="stylesheet" href="../styles/theme-default.min.css">
+    <link rel="stylesheet" href="../styles/shared/styles.min.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+<section class="slide">
+  <h2><img src="media/sass-logo.png" style="background: 0; margin: auto; box-shadow: none; height: 120px; top: 1.33rem; position: relative;"/>, Sanely</h2>
+</section>
+<section class="slide">
+  <h2>Hi, I'm Kendrick.</h2>
+</section>
+<section>
+  <h2>Show of hands</h2>
+</section>
+<section>
+  <p>Sass is a <span class="emphasize">preprocessor</span>—a simple scripting language that outputs CSS.</p>
+</section>
+<section>
+  <p>Sass has a host of features that can be leveraged to write CSS…</p>
+  <ul>
+    <li class="fragment">Quickly</li>
+    <li class="fragment">With fewer errors</li>
+    <li class="fragment">With less repetition</li>
+    <li class="fragment">That's easy to maintain</li>
+  </ul>
+</section>
+<section>
+  <h2>A Sane Approach to Sass</h2>
+</section>
+<section>
+  <h2>Variables</h2>
+</section>
+<section>
+  <div class="emphasis">Variables</div>
+  <pre>$p1-blue: #0a689d;
+
+body {
+  $bg-color: #fcfefe;
+  background: $bg-color;
+  color: $p1-blue;
+}</pre>
+</section>
+<section>
+  <h2>Nesting</h2>
+</section>
+<section>
+  <div class="emphasis">Nesting</div>
+  <pre>.banner {
+  &amp;.error {
+    color: #d51c31;
+  }
+
+  &amp;.warning {
+   color: #ffc300;
+ }
+}</pre>
+</section>
+<section>
+  <div class="emphasis">Nesting</div>
+  <pre>.banner.error {
+    color: #d51c31;
+}
+
+.banner.warning {
+   color: #ffc300;
+}</pre>
+</section>
+<section>
+  <h2>Nesting</h2>
+  <p class="emphasis">A tiny warning</p>
+</section>
+<section>
+  <h2>Lists &amp; Maps</h2>
+</section>
+<section>
+  <div class="emphasis">Lists</div>
+  <pre>$states: 'success', 'error',
+         'warning', 'info';</pre>
+</section>
+<section>
+  <div class="emphasis">Maps</div>
+  <pre>$states-with-colors: (
+  success: #00b575,
+  error: #d51c31,
+  warning: #ffc300,
+  info: #1492d9
+);</pre>
+</section>
+<section>
+  <div class="emphasis">Maps</div>
+  <pre>map-get($states-with-colors, 'success');</pre>
+</section>
+<section>
+  <h2>Functions</h2>
+</section>
+<section>
+  <div class="emphasis">Functions</div>
+  <pre>@function get-state-color($state) {
+  @return map-get($states-with-colors,
+                  $state);
+}</pre>
+</section>
+<section>
+  <h2>Mixins</h2>
+</section>
+<section>
+  <div class="emphasis">Mixins</div>
+  <pre>@mixin state-color($state) {
+  color: get-state-color($state);
+}</pre>
+</section>
+<section>
+  <div class="emphasis">Mixins</div>
+  <pre>.error {
+  @include state-color('error');
+}
+
+.success {
+  @include state-color('success');
+}</pre>
+</section>
+<section>
+  <div class="emphasis">Mixins (Bonus!)</div>
+  <pre>@each $state in $states {
+  .#{$state} {
+    @include state-color($state);
+  }
+}</pre>
+</section>
+<section data-background-image="./media/neil.gif"></section>
+<section>
+  <h2>Thanks!</h2>
+  <p>Questions?</p>
+</section></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="../js/vendor/reveal/js/reveal.min.js"></script>
+    <script src="../lib/head.min.js"></script>
+    <script>
+      Reveal.initialize({
+        progress: false,
+        controls: false,
+        dependencies: [
+          { src: '../plugin/zoom-js/zoom.js', async: true },
+          { src: '../plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>
